@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Mahakal Travels</title>
+    <meta name="description" content="Explore our stunning photo gallery showcasing beautiful destinations and travel experiences from around the world.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Mahakal Travels</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <h2>Our Photo Gallery</h2>
+        
+        <!-- Gallery Categories -->
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <button class="btn btn-primary" onclick="filterGallery('all')">All</button>
+            <button class="btn" onclick="filterGallery('beaches')">Beaches</button>
+            <button class="btn" onclick="filterGallery('mountains')">Mountains</button>
+            <button class="btn" onclick="filterGallery('adventures')">Adventures</button>
+            <button class="btn" onclick="filterGallery('religious')">Religious</button>
+        </div>
+        
+        <div class="gallery-grid">
+            <!-- Beaches -->
+            <div class="gallery-item beaches">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Beautiful Beach">
+                <div class="overlay">
+                    <h4>Bali Beach</h4>
+                    <p>Paradise found</p>
+                </div>
+            </div>
+            <div class="gallery-item beaches">
+                <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tropical Beach">
+                <div class="overlay">
+                    <h4>Phuket Beach</h4>
+                    <p>Crystal clear waters</p>
+                </div>
+            </div>
+            <div class="gallery-item beaches">
+                <img src="https://images.unsplash.com/photo-1501436513145-30f24e19fcc8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Maldives Beach">
+                <div class="overlay">
+                    <h4>Maldives</h4>
+                    <p>Overwater paradise</p>
+                </div>
+            </div>
+            
+            <!-- Mountains -->
+            <div class="gallery-item mountains">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mountain Landscape">
+                <div class="overlay">
+                    <h4>Swiss Alps</h4>
+                    <p>Majestic peaks</p>
+                </div>
+            </div>
+            <div class="gallery-item mountains">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Himalayan Mountains">
+                <div class="overlay">
+                    <h4>Himalayas</h4>
+                    <p>Snow-capped wonders</p>
+                </div>
+            </div>
+            <div class="gallery-item mountains">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Rocky Mountains">
+                <div class="overlay">
+                    <h4>Rocky Mountains</h4>
+                    <p>Adventure awaits</p>
+                </div>
+            </div>
+            
+            <!-- Adventures -->
+            <div class="gallery-item adventures">
+                <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Adventure Activity">
+                <div class="overlay">
+                    <h4>Skydiving</h4>
+                    <p>Thrill of a lifetime</p>
+                </div>
+            </div>
+            <div class="gallery-item adventures">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Scuba Diving">
+                <div class="overlay">
+                    <h4>Scuba Diving</h4>
+                    <p>Underwater exploration</p>
+                </div>
+            </div>
+            <div class="gallery-item adventures">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hiking">
+                <div class="overlay">
+                    <h4>Mountain Hiking</h4>
+                    <p>Conquer the peaks</p>
+                </div>
+            </div>
+            
+            <!-- Religious -->
+            <div class="gallery-item religious">
+                <img src="https://images.unsplash.com/photo-1582515073490-39981397c445?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Temple">
+                <div class="overlay">
+                    <h4>Ancient Temple</h4>
+                    <p>Spiritual journey</p>
+                </div>
+            </div>
+            <div class="gallery-item religious">
+                <img src="https://images.unsplash.com/photo-1544008230-ac1e1fb4f4f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pilgrimage Site">
+                <div class="overlay">
+                    <h4>Holy Pilgrimage</h4>
+                    <p>Sacred destinations</p>
+                </div>
+            </div>
+            <div class="gallery-item religious">
+                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Religious Festival">
+                <div class="overlay">
+                    <h4>Religious Festival</h4>
+                    <p>Cultural celebrations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img src="" alt="">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Mahakal Travels</h3>
+                <p>Your trusted partner for unforgettable travel experiences.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="packages.html">Travel Packages</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Photo Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 91351 65706</li>
+                    <li><i class="fas fa-envelope"></i> info@mahakaltravels.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mahakal Travels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="#" class="whatsapp-btn thin" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Gallery filter functionality
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.btn');
+            
+            // Remove active class from all buttons
+            buttons.forEach(btn => btn.classList.remove('btn-primary'));
+            buttons.forEach(btn => btn.classList.add('btn'));
+            
+            // Add active class to clicked button
+            event.target.classList.remove('btn');
+            event.target.classList.add('btn-primary');
+            
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+        
+        // Initialize gallery with all items visible
+        document.addEventListener('DOMContentLoaded', function() {
+            filterGallery('all');
+        });
+    </script>
+</body>
+</html>
