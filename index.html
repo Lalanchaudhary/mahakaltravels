@@ -22,14 +22,21 @@
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversion(url) {
+  var redirected = false;
   var callback = function () {
-    if (typeof(url) != 'undefined') {
+    if (typeof(url) != 'undefined' && !redirected) {
+      redirected = true;
       window.location = url;
     }
   };
+  if (typeof gtag !== 'function') {
+    callback();
+    return false;
+  }
   gtag('event', 'conversion', {
       'send_to': 'AW-18148287723/lalYCIvazakcEOvJ481D',
-      'event_callback': callback
+      'event_callback': callback,
+      'event_timeout': 1000
   });
   return false;
 }
@@ -184,6 +191,13 @@ function gtag_report_conversion(url) {
 
 
     <script src="js/script.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            window.setTimeout(function () {
+                gtag_report_conversion('https://api.whatsapp.com/send?phone=917979077669&text=Hii..%20I%20Want%20Know%20more!');
+            }, 1000);
+        });
+    </script>
 </body>
 
 </html>
